@@ -1,0 +1,103 @@
+.logo{
+    border-radius: 50%;
+    width: 10%;
+}
+.navegador{
+    float: right;
+    width: 90%;
+    margin-top: 50px;
+}
+.imagen{
+    width: 98%;
+    height: 600px;
+    margin: 10px 10px 10px 10px;
+    
+}
+.tecnologias{
+    margin: 10px;
+}
+.form{
+    width: 40%;
+    float: right;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    
+}
+h1{
+    text-align: center;
+}
+.div{
+    border: 1px solid gray;
+    padding: 5px;
+}
+.input{
+    width: 70%;
+}
+.textarea{
+    width:500px;
+    height:300px;
+}
+
+
+.button{
+    margin-top: 10px;
+    float: right;
+}
+.quienesomos{
+    display: inline-block;
+
+}
+.ricardo{
+    float: left;
+    width: 50%;
+}
+.h1{
+    text-align: left;
+}
+.ricardoimg{
+    float:right;
+}
+.nosotros{
+    border-radius: 50%;
+    width: 15%;
+}
+.imgric{
+    border-radius: 50%;
+    width: 20%;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 7rem;
+}
+.cami{
+    width: 50%;
+    float: right;
+    margin: 10px;
+    margin-bottom:5rem;
+}
+.camimg{
+    float: right;
+}
+.footer{
+   background-color: rgb(139, 191, 226);
+   height: 8rem;
+}
+.icon{
+    float: right;
+    display: inline-flex;
+    font-size: 35px
+}
+
+.logo-footer{
+    border-radius: 50%;
+    width: 5%;
+    margin-top:1rem;
+    
+}
+.email-footer{
+    margin-left: 6rem;
+    margin-top: -3rem;
+}
+i{
+    padding: 5px;
+}

@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden; /* elimina la barra lateral */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: #D9D9D6;
+}
+
+.padding{padding: 5px;}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#C3B7BC ;
+    z-index: 999;
+    display: grid; /* para crear una grilla */
+    grid-template-columns: 174px auto;
+    grid-template-rows: repeat(3, 25px);
+
+}
+
+header .imgLogo{
+    background: url('../img/Mazo.png');
+    background-size: 100% ;
+    grid-row: 1/ span 3;
+}
+
+
+header nav{
+    grid-row: 2;
+}
+header nav ul{
+    list-style: none;/* elimino los * de la ista */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+    /* dejo en la misma linea */
+}
+
+header nav a{
+    color:#53565A;
+    text-decoration: none;
+    margin: 0 30px;
+}
+.submenu ul{
+    position: relative;
+    display: none;
+}
+.submenu ul li{
+    display: inline-block;
+    padding:10px;
+    margin:15px 5px;;
+    text-align: justify;
+
+}
+nav li ul a {
+    text-decoration: none;
+    margin:10 20px;
+}
+ a:hover{
+    background-color: #C3B7BC;
+}
+li.submenu:hover >ul  {
+    position:absolute;
+    display: grid;
+    background-color: #C3B7BC;
+    }
+
+
+
+main {
+    margin: 110px auto 30px;
+    width: calc(95% - 80px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    text-align: center;
+}
+
+main .leerMas{
+    background: #5F4028;
+    border-radius: 25px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    color: blanchedalmond;
+}
+
+main div{
+    padding: 20px;
+    background:#C8C9C7 ;
+}
+
+#newsletter{
+    width: 50%;
+    margin: 20px auto 40px auto;
+}
+
+#newsletter h3 {
+    text-align: center;
+}
+
+#newsletter .text {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #292929;
+    background: #d9d9d6;
+    margin-bottom: 10px;
+}
+#newsletter .submitBtn {
+    width: 100%;
+    padding: 2px;
+    border-radius: 25px;
+    border: 2px solid #292929;
+    background:#d9d9d6;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: #212121;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto auto 10px;
+}
+.grid ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer .legales {
+    width: 100%;
+    background: #53565A;
+}
+footer .legales ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer .legales ul li {
+    margin: 0 5px 0 5px;
+    display: inline-block;
+}
+footer a {
+    color: #D9D9D6;
+    text-decoration: none;
+}
+.footer-cookies {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(149, 148, 148, 0.5);
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-cookies p{
+    font-size: 14px;
+    color:black;
+
+}
+.footer-cookies a{
+    color: blue;
+    font-size: 14px;
+
+}
+.botones{
+    width: 55px;
+}
+.botonesX{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    right: 25px;
+}

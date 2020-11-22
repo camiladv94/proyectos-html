@@ -1,0 +1,168 @@
+body {
+  margin: 0px;;
+  background-color: #8f57fd;
+}
+.header {
+  background-color: #8f57fd;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header__menu ul {
+ display: none;
+ list-style: none;
+ padding: 0px;
+ position: absolute;
+ width: 100px;
+ text-align: right;
+ margin: 0px 0px 0px -5px;
+}
+
+.header__menu:hover ul, ul:hover {
+  display:block;
+}
+
+.header__menu li {
+  margin:6px 0px;
+}
+
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+
+.header__menu--profile {
+  margin-right: 1rem;
+  
+  display: flex;
+}
+.header__menu--profile p {
+  color: white;
+  padding-left: 10px;
+}
+.main {
+  height: 300px;
+ text-align: center;
+ 
+}
+
+.main__title {
+  color: white;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.input {
+ 
+  border-radius: 25px;
+  border: 2px solid white;
+  color: white;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  background-color: rgba(255,255,255, 0.1);
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.categories__title {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.carrousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+
+}
+
+.carrousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+ 
+}
+
+.carrousel-item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: tomato;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carrousel-item:hover ~ .carrousel-item{
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.carrousel__container:hover .carrousel-item{ 
+  opacity: 0.3;
+}
+.carrousel__container:hover .carrousel-item:hover{
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.carrousel-item__img{
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carrousel-item__details{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #8f57fd;
+}
+
+.footer a{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
